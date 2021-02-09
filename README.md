@@ -13,7 +13,7 @@ A series of models for predicting the mechanism of action for different drugs ba
 
 A model (or rather series of models) for predicting movie ratings based on the MovieLens dataset. Created as part of the capstone project for the HarvardX Data Science Professional Certificate.
 
-A very simple web-based recommendation system based on a minimalist version of the model is hosted at [https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/].
+A very simple web-based recommendation system based on a minimalist version of the model is hosted at (https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/).
 
 ### Stock data reduction via identification of “pivot points”
 
