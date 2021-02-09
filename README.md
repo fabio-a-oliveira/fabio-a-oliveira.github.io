@@ -5,6 +5,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 [another page!](https://fabio-a-oliveira.github.io/another_file)
 
+[test_pdf]((https://fabio-a-oliveira.github.io/certificate%20-%20Machine%20Learning%20with%20Python.pdf)
+
 ### Mechanisms-of-Action prediction
 
 A series of models for predicting the mechanism of action for different drugs based on gene expression and cell viability data. Created as part of the capstone project for the HarvardX Data Science Professional Certificate and inspired by a Kaggle competition.
