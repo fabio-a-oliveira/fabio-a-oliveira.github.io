@@ -62,7 +62,7 @@ _Jul 30, 2020_
 An investigation on the data from a [2015 PNAS research paper](https://www.pnas.org/content/112/40/12349) (used as a pretext for practicing R-Markdown and data visualization with ggplot2).   
 
 ![](2020-07-30%2001.png =100x100)
-<img src="2020-07-30%2001.png" width="600">
+<img src="2020-07-30%2001.png" width="100%" class="center">
 
 [Read...](https://fabio-a-oliveira.github.io/2020-07-30%20Research%20Funding.html)
 
