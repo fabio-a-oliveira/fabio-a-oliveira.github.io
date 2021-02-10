@@ -1,9 +1,8 @@
-# fabio-a-oliveira.github.io
+# Fabio Oliveira's blog + projects + rants
 
-_About me: a dude delving into DS/ML and documenting his exploits_   
-_contact info: linkedin, github_
+_About me: a dude delving into Data Science & Machine Learning and documenting his exploits_   
+_contact info: [LinkedIn](https://www.linkedin.com/in/fabioarbacholiveira/), [GitHub](https://github.com/fabio-a-oliveira)_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   
 
 ***
 
@@ -13,10 +12,18 @@ _DD/MM/YYYY (updated DD/MM/YYYY)_
 
 ***
 
-_DD/MM/YYYY_
-## [Project] Mechanisms-of-Action prediction
+_Nov 26, 2020_
+## [Project] [Mechanisms-of-Action prediction](https://fabio-a-oliveira.github.io/2020-11-26%20HX9_CYO_Report.html)
 
-A series of models for predicting the mechanism of action for different drugs based on gene expression and cell viability data. Created as part of the capstone project for the HarvardX Data Science Professional Certificate and inspired by a Kaggle competition.   
+A statistical model for predicting the Mechanism of Action of a drug based on gene expression and cell viability data.
+
+A _*mechanism of action (MoA)*_ is a label attributed to an agent to describe its biological activity.  By being able to properly identify a molecule’s MoA, it can subsequently be used in a targeted manner to obtain a desired cell response.
+
+The final model is a weighted average of prediction from several individual models: Logistic Regression, K-nearest neighbors, Naive Bayes with loess smoothing, Support Vector Machine and Multi-class Penalized Mixture Discriminant Analysis.   
+
+Created as part of the capstone project for the [HarvardX Data Science Professional Certificate](https://www.edx.org/professional-certificate/harvardx-data-science) and inspired by a [Kaggle competition](https://www.kaggle.com/c/lish-moa).
+
+[Read...](https://fabio-a-oliveira.github.io/2020-11-26%20HX9_CYO_Report.html)  
 
 ***
 
@@ -29,7 +36,7 @@ Created as part of the capstone project for the [HarvardX Data Science Professio
 
 A very simple web-based recommendation system based on a minimalist version of the model is hosted at [https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/](https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/).   
 
-[Read...]((https://fabio-a-oliveira.github.io/2020-09-21%20HX9_MovieLens_Report.html))
+[Read...](https://fabio-a-oliveira.github.io/2020-09-21%20HX9_MovieLens_Report.html)
 
 ***
 
@@ -49,7 +56,15 @@ A naive encoding of time series data, created before DNN. A combination of a 1D 
 
 ***
 
-_DD/MM/YYYY_
-## [Project] Gender bias in research funding
+_Jul 30, 2020_
+## [Project] [Gender bias in research funding](https://fabio-a-oliveira.github.io/2020-07-30 Research Funding.html)
 
-An investigation on the data from a 2015 PNAS research paper (used as a pretext for practicing R-Markdown).
+An investigation on the data from a [2015 PNAS research paper](https://www.pnas.org/content/112/40/12349) (used as a pretext for practicing R-Markdown and data visualization with ggplot2).   
+
+![](2020-07-30 01.png)
+
+[Read...](https://fabio-a-oliveira.github.io/2020-07-30 Research Funding.html)
+
+
+
+
