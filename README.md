@@ -10,36 +10,32 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [test_pdf](https://fabio-a-oliveira.github.io/certificate%20-%20Machine%20Learning%20with%20Python.pdf)
 
 DD/MM/YYYY (updated DD/MM/YYYY)
-### [Blog] Running list of short and sweet DS/ML analogies
+## [Blog] Running list of short and sweet DS/ML analogies
 
 DD/MM/YYYY
-### [Project] Mechanisms-of-Action prediction
+## [Project] Mechanisms-of-Action prediction
 
 A series of models for predicting the mechanism of action for different drugs based on gene expression and cell viability data. Created as part of the capstone project for the HarvardX Data Science Professional Certificate and inspired by a Kaggle competition.
 
-DD/MM/YYYY
-### [Project] A model for predicting movie ratings
+Sep 21, 2020
+## [Project] [A model for predicting movie ratings](https://fabio-a-oliveira.github.io/2020-09-21%20HX9_MovieLens_Report.html)
 
 A model (or rather series of models) for predicting movie ratings based on the MovieLens dataset. Created as part of the capstone project for the HarvardX Data Science Professional Certificate.   
-[.md file](https://fabio-a-oliveira.github.io/_posts/HX9_MovieLens_Report.md)   
-[.html file](https://fabio-a-oliveira.github.io/_posts/HX9_MovieLens_Report.html)   
-[.html file](https://fabio-a-oliveira.github.io/HX9_MovieLens_Report.html)
-[.html_file](https://github.com/fabio-a-oliveira/fabio-a-oliveira.github.io/blob/main/_posts/HX9_MovieLens_Report.html)
 
 
 A very simple web-based recommendation system based on a minimalist version of the model is hosted at [https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/](https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/).
 
 DD/MM/YYYY
-### [Blog] Maximum likelihood, overfitting and romance
+## [Blog] Maximum likelihood, overfitting and romance
 
 Overfitting is the price we pay for solving the wrong problem.
 
 DD/MM/YYYY
-### [Project] Stock data reduction via identification of “pivot points”
+## [Project] Stock data reduction via identification of “pivot points”
 
 A naive encoding of time series data, created before DNN. A combination of a 1D conv-net for encoding and a recurrent network for inference would be much better suited. Cool visualizations though!
 
 DD/MM/YYYY
-### [Project] Gender bias in research funding
+## [Project] Gender bias in research funding
 
 An investigation on the data from a 2015 PNAS research paper (used as a pretext for practicing R-Markdown).
