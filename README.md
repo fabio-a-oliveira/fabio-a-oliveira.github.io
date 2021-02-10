@@ -20,9 +20,11 @@ A series of models for predicting the mechanism of action for different drugs ba
 DD/MM/YYYY
 ### [Project] A model for predicting movie ratings
 
-A model (or rather series of models) for predicting movie ratings based on the MovieLens dataset. Created as part of the capstone project for the HarvardX Data Science Professional Certificate.
-[.md file](https://fabio-a-oliveira.github.io/_posts/HX9_MovieLens_Report.md)
+A model (or rather series of models) for predicting movie ratings based on the MovieLens dataset. Created as part of the capstone project for the HarvardX Data Science Professional Certificate.   
+[.md file](https://fabio-a-oliveira.github.io/_posts/HX9_MovieLens_Report.md)   
 [.html file](https://fabio-a-oliveira.github.io/_posts/HX9_MovieLens_Report.html)
+[.html file](https://fabio-a-oliveira.github.io/HX9_MovieLens_Report.html)
+
 
 A very simple web-based recommendation system based on a minimalist version of the model is hosted at [https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/](https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/).
 
