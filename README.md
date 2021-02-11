@@ -10,6 +10,10 @@ _DD/MM/YYYY (updated DD/MM/YYYY)_
 
 ## Running list of short and sweet DS/ML analogies    
 
+PCA
+BN
+Nesterov
+
 ***
 
 _Nov 26, 2020_
