@@ -17,9 +17,9 @@ _Nov 26, 2020_
 
 A statistical model for predicting the Mechanism of Action of a drug based on gene expression and cell viability data.
 
-A _*mechanism of action (MoA)*_ is a label attributed to an agent to describe its biological activity.  By being able to properly identify a molecule’s MoA, it can subsequently be used in a targeted manner to obtain a desired cell response.
+A _**mechanism of action (MoA)**_ is a label attributed to an agent to describe its biological activity.  By being able to properly identify a molecule’s MoA, it can subsequently be used in a targeted manner to obtain a desired cell response.
 
-The final model is a weighted average of prediction from several individual models: Logistic Regression, K-nearest neighbors, Naive Bayes with loess smoothing, Support Vector Machine and Multi-class Penalized Mixture Discriminant Analysis.   
+The final model is a weighted average of predictions from several individual models: Logistic Regression, K-nearest neighbors, Naive Bayes with loess smoothing, Support Vector Machine and Multi-class Penalized Mixture Discriminant Analysis.   
 
 Created as part of the capstone project for the [HarvardX Data Science Professional Certificate](https://www.edx.org/professional-certificate/harvardx-data-science) and inspired by a [Kaggle competition](https://www.kaggle.com/c/lish-moa).
 
