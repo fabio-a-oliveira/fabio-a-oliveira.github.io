@@ -50,9 +50,13 @@ Read...
 ***
 
 _DD/MM/YYYY_
-## Stock data reduction via identification of “pivot points”
+## [Stock data reduction via identification of “pivot points”](https:/fabio-a-oliveira.github.io/2020-08-04_stock_data_simplification.html)
 
 A naive encoding of time series data, created before DNN. A combination of a 1D conv-net for encoding and a recurrent network for inference would be much better suited. Cool visualizations though!   
+
+<img src="2020-08-04_animation_sequential_loop.gif" width="80%" class="center">
+
+[Read...](https:/fabio-a-oliveira.github.io/2020-08-04_stock_data_simplification.html)   
 
 ***
 
