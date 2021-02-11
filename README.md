@@ -8,12 +8,12 @@ _contact info: [LinkedIn](https://www.linkedin.com/in/fabioarbacholiveira/), [Gi
 
 _DD/MM/YYYY (updated DD/MM/YYYY)_
 
-## [Blog] Running list of short and sweet DS/ML analogies    
+## Running list of short and sweet DS/ML analogies    
 
 ***
 
 _Nov 26, 2020_
-## [Project] [Mechanisms-of-Action prediction](https://fabio-a-oliveira.github.io/2020-11-26%20HX9_CYO_Report.html)
+## [Mechanisms-of-Action prediction](https://fabio-a-oliveira.github.io/2020-11-26%20HX9_CYO_Report.html)
 
 A statistical model for predicting the Mechanism of Action of a drug based on gene expression and cell viability data.
 
@@ -28,7 +28,7 @@ Created as part of the capstone project for the [HarvardX Data Science Professio
 ***
 
 _Sep 21, 2020_
-## [Project] [A model for predicting movie ratings](https://fabio-a-oliveira.github.io/2020-09-21%20HX9_MovieLens_Report.html)
+## [A model for predicting movie ratings](https://fabio-a-oliveira.github.io/2020-09-21%20HX9_MovieLens_Report.html)
 
 A model for predicting movie ratings on the [MovieLens](https://grouplens.org/datasets/movielens/) dataset. A series of models of increased complexity are proposed considering user and movie average ratings, user preferences for particular movie genres, movie age at the time of rating, and finally the application of Item-Based Collaborative Filtering.
 
@@ -41,7 +41,7 @@ A very simple web-based recommendation system based on a minimalist version of t
 ***
 
 _DD/MM/YYYY_
-## [Blog] Maximum likelihood, overfitting and romance
+## Maximum likelihood, overfitting and romance
 
 Overfitting is the price we pay for answering the wrong question.   
 
@@ -50,14 +50,14 @@ Read...
 ***
 
 _DD/MM/YYYY_
-## [Project] Stock data reduction via identification of “pivot points”
+## Stock data reduction via identification of “pivot points”
 
 A naive encoding of time series data, created before DNN. A combination of a 1D conv-net for encoding and a recurrent network for inference would be much better suited. Cool visualizations though!   
 
 ***
 
 _Jul 30, 2020_
-## [Project] [Gender bias in research funding](https://fabio-a-oliveira.github.io/2020-07-30%20Research%20Funding.html)
+## [Gender bias in research funding](https://fabio-a-oliveira.github.io/2020-07-30%20Research%20Funding.html)
 
 An investigation on the data from a [2015 PNAS research paper](https://www.pnas.org/content/112/40/12349) (used as a pretext for practicing R-Markdown and data visualization with ggplot2).   
 
