@@ -1,4 +1,4 @@
-# Fabio Oliveira's blog + projects + rants
+# Fabio Oliveira's blog & projects & rants
 
 _About me: a dude delving into Data Science & Machine Learning and documenting his exploits_   
 _contact info: [LinkedIn](https://www.linkedin.com/in/fabioarbacholiveira/), [GitHub](https://github.com/fabio-a-oliveira)_
