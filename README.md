@@ -1,7 +1,7 @@
 # Fabio Oliveira's blog & projects & rants
 
 _About me: a dude delving into Data Science & Machine Learning and documenting his exploits_   
-_contact info: [LinkedIn](https://www.linkedin.com/in/fabioarbacholiveira/), [GitHub](https://github.com/fabio-a-oliveira)_
+_contact info: [email](fabio.afdo@gmail.com), [LinkedIn](https://www.linkedin.com/in/fabioarbacholiveira/), [GitHub](https://github.com/fabio-a-oliveira)_
 
 
 ***
