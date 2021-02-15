@@ -3,7 +3,7 @@
 _About me: a dude delving into Data Science & Machine Learning and documenting his exploits_   
 _contact info: [email](mailto:fabio.afdo@gmail.com), [LinkedIn](https://www.linkedin.com/in/fabioarbacholiveira/), [GitHub](https://github.com/fabio-a-oliveira)_
 
-
+<!---
 ***
 
 _DD/MM/YYYY (updated DD/MM/YYYY)_
@@ -12,7 +12,7 @@ _DD/MM/YYYY (updated DD/MM/YYYY)_
 
 PCA
 BN
-Nesterov
+Nesterov --->
 
 ***
 
