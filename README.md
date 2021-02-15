@@ -43,7 +43,7 @@ A very simple web-based recommendation system based on a minimalist version of t
 [Read...](https://fabio-a-oliveira.github.io/2020-09-21%20HX9_MovieLens_Report.html)
 
 ***
-
+<!---
 _DD/MM/YYYY_
 ## Maximum likelihood, overfitting and romance
 
@@ -52,6 +52,7 @@ Overfitting is the price we pay for answering the wrong question.
 Read...
 
 ***
+--->
 
 _Aug 4, 2020_
 ## [Stock data reduction via identification of “pivot points”](https:/fabio-a-oliveira.github.io/2020-08-04_stock_data_simplification.html)
