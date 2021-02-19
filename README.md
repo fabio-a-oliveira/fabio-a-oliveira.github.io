@@ -40,11 +40,8 @@ Created as part of the capstone project for the [HarvardX Data Science Professio
 
 A very simple web-based recommendation system based on a minimalist version of the model is hosted at [https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/](https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/).   
 
-<iframe src="https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/" width="80%" class="center">
+<iframe src="https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/" width="100%" height="500">
 </iframe>
-
-<object type="text/html" data="https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/" width="80%" class="center">
-</object>
 
 
 [Read...](https://fabio-a-oliveira.github.io/2020-09-21%20HX9_MovieLens_Report.html)
