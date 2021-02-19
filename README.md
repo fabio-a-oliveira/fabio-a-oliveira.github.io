@@ -38,9 +38,9 @@ A model for predicting movie ratings on the [MovieLens](https://grouplens.org/da
 
 Created as part of the capstone project for the [HarvardX Data Science Professional Certificate](https://www.edx.org/professional-certificate/harvardx-data-science).    
 
-A very simple web-based recommendation system based on a minimalist version of the model is hosted at [https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/](https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/).   
+A very simple web-based recommendation system based on a minimalist version of the model is hosted at [https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/](https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/). You can also use it in the frame below:       
 
-<iframe src="https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/" width="100%" height="500">
+<iframe src="https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/" width="100%" height="600">
 </iframe>
 
 
