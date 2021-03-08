@@ -89,19 +89,38 @@ An investigation on the data from a [2015 PNAS research paper](https://www.pnas.
 
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>
 
+
+original code:
 <midi-player
   src="new_chorale__2021-03-08__12-26-40__120__.mid"
   sound-font visualizer="#myVisualizer">
 </midi-player>
 
+without visualizer:
 <midi-player
   src="new_chorale__2021-03-08__12-26-40__120__.mid">
 </midi-player>
 
+different sound font:
 <midi-player
   src="new_chorale__2021-03-08__12-26-40__120__.mid"
   player.soundFont = "https://www.polyphone-soundfonts.com/files/27-instrument-sets/256-sgm-v2-01">
 </midi-player>
+
+yet another sound font:
+<midi-player
+  src="new_chorale__2021-03-08__12-26-40__120__.mid"
+  player.soundFont = "https://www.polyphone-soundfonts.com/files/27-instrument-sets/256-sgm-v2-01">
+</midi-player>
+
+another attemp at sound font:
+<midi-player
+  src="new_chorale__2021-03-08__12-26-40__120__.mid"
+  player.soundFont = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus/acoustic_grand_piano/instrument.json">
+</midi-player>
+
+
+https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus/acoustic_grand_piano/instrument.json
 
 
 
