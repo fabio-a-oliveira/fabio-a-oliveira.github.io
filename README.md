@@ -104,7 +104,6 @@ An investigation on the data from a [2015 PNAS research paper](https://www.pnas.
   src="new_chorale__2021-03-08__12-26-40__120__.mid"
   sound-font visualizer="#myVisualizer">
 </midi-player>
-<midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
 
 
 
