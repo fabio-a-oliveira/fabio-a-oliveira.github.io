@@ -94,7 +94,14 @@ An investigation on the data from a [2015 PNAS research paper](https://www.pnas.
   sound-font visualizer="#myVisualizer">
 </midi-player>
 
+<midi-player
+  src="new_chorale__2021-03-08__12-26-40__120__.mid">
+</midi-player>
 
+<midi-player
+  src="new_chorale__2021-03-08__12-26-40__120__.mid"
+  player.soundFont = "https://www.polyphone-soundfonts.com/files/27-instrument-sets/256-sgm-v2-01">
+</midi-player>
 
 
 
