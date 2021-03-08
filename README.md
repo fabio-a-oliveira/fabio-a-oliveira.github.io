@@ -86,18 +86,6 @@ An investigation on the data from a [2015 PNAS research paper](https://www.pnas.
 
 ----------------------
 
-<!---
-
-<figure>
-    <figcaption>Listen to the T-Rex:</figcaption>
-    <audio
-        controls
-        src="new_chorale__2021-03-08__12-26-40__120__.mid">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
---->
 
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>
 
