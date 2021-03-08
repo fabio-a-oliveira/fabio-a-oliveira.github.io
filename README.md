@@ -98,6 +98,14 @@ An investigation on the data from a [2015 PNAS research paper](https://www.pnas.
 </figure>
 
 
+<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>
+
+<midi-player
+  src="new_chorale__2021-03-08__12-26-40__120__.mid"
+  sound-font visualizer="#myVisualizer">
+</midi-player>
+<midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
+
 
 
 
