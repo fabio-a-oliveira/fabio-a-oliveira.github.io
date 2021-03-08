@@ -139,6 +139,35 @@ from sf.2 file
   sound-font="Boychoir.sf2">
 </midi-player>
 
+instrument 51
+<midi-player
+  src="test51.mid"
+  sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
+</midi-player>
+
+instrument 54
+<midi-player
+  src="test54.mid"
+  sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
+</midi-player>
+
+instrument 71
+<midi-player
+  src="test71.mid"
+  sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
+</midi-player>
+
+instrument 79
+<midi-player
+  src="test79.mid"
+  sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
+</midi-player>
+
+instrument 94
+<midi-player
+  src="test94.mid"
+  sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
+</midi-player>
 
 
 
