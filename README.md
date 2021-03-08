@@ -116,11 +116,9 @@ yet another sound font:
 another attemp at sound font:
 <midi-player
   src="new_chorale__2021-03-08__12-26-40__120__.mid"
-  player.soundFont = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus/acoustic_grand_piano/instrument.json">
+  player.soundFont = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
 </midi-player>
 
-
-https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus/acoustic_grand_piano/instrument.json
 
 
 
