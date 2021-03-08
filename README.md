@@ -96,47 +96,16 @@ original code:
   sound-font visualizer="#myVisualizer">
 </midi-player>
 
-without visualizer:
+instrument 42
 <midi-player
-  src="new_chorale__2021-03-08__12-26-40__120__.mid">
-</midi-player>
-
-different sound font:
-<midi-player
-  src="new_chorale__2021-03-08__12-26-40__120__.mid"
-  player.soundFont = "https://www.polyphone-soundfonts.com/files/27-instrument-sets/256-sgm-v2-01">
-</midi-player>
-
-yet another sound font:
-<midi-player
-  src="new_chorale__2021-03-08__12-26-40__120__.mid"
-  player.soundFont = "https://www.polyphone-soundfonts.com/files/27-instrument-sets/256-sgm-v2-01">
-</midi-player>
-
-another attemp at sound font:
-<midi-player
-  src="new_chorale__2021-03-08__12-26-40__120__.mid"
+  src="test42.mid"
   sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
 </midi-player>
 
-another attemp at sound font:
+instrument 43
 <midi-player
-  src="new_chorale__2021-03-08__12-26-40__120__.mid"
+  src="test43.mid"
   sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
-</midi-player>
-
-piano??
-another attemp at sound font:
-<midi-player
-  src="test.mid"
-  sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
-</midi-player>
-
-
-from sf.2 file
-<midi-player
-  src="new_chorale__2021-03-08__12-26-40__120__.mid"
-  sound-font="Boychoir.sf2">
 </midi-player>
 
 instrument 51
@@ -148,6 +117,12 @@ instrument 51
 instrument 54
 <midi-player
   src="test54.mid"
+  sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
+</midi-player>
+
+instrument 55
+<midi-player
+  src="test55.mid"
   sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
 </midi-player>
 
