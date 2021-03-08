@@ -144,7 +144,10 @@ instrument 94
   sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
 </midi-player>
 
-
-
+empty sound-font
+<midi-player
+  src="test94.mid"
+  sound-font = "">
+</midi-player>
 
 
