@@ -119,6 +119,21 @@ another attemp at sound font:
   sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
 </midi-player>
 
+another attemp at sound font:
+<midi-player
+  src="new_chorale__2021-03-08__12-26-40__120__.mid"
+  sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
+</midi-player>
+
+from sf.2 file
+another attemp at sound font:
+<midi-player
+  src="new_chorale__2021-03-08__12-26-40__120__.mid"
+  sound-font = "Boychoir.sf2">
+</midi-player>
+
+
+
 
 
 
