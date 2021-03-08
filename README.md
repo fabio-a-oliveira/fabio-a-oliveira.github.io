@@ -126,10 +126,9 @@ another attemp at sound font:
 </midi-player>
 
 from sf.2 file
-another attemp at sound font:
 <midi-player
   src="new_chorale__2021-03-08__12-26-40__120__.mid"
-  sound-font = "Boychoir.sf2">
+  sound-font="Boychoir.sf2">
 </midi-player>
 
 
