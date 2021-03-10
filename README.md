@@ -24,7 +24,7 @@ This article gives a high-level description of the project and showcases some ex
   sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
 </midi-player>
 
-[Read...]((https://fabio-a-oliveira.github.io/2021-03-10_Bach_chorales.md))   
+[Read...](https://fabio-a-oliveira.github.io/2021-03-10_Bach_chorales.md)   
 
 <!---
 ***
