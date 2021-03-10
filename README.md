@@ -6,7 +6,7 @@ _contact info: [email](mailto:fabio.afdo@gmail.com), [LinkedIn](https://www.link
 ***
 
 _March 10, 2021_
-## Generating original music from Bach's four-part chorales
+## Generating original music in the style of Bach's four-part chorales
 
 I'm sure by now everyone has seen examples of AI applications where an algorithm is left to train for some time on a large corpus of text or music and can then be used to create new content following the same style. This project is my take on training a recurrent neural network on the full set of JS Bach's four-part chorale pieces and then using it to create some new, original music.   
 
