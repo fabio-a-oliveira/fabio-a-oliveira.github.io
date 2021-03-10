@@ -40,13 +40,8 @@ Created as part of the capstone project for the [HarvardX Data Science Professio
 
 A very simple web-based recommendation system based on a minimalist version of the model is hosted at [https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/](https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/). You can also use it in the frame below:       
 
-<!---
-
 <iframe src="https://fabio-a-oliveira.shinyapps.io/MovieRecommenderApp/" width="100%" height="600">
 </iframe>
-
---->
-
 
 [Read...](https://fabio-a-oliveira.github.io/2020-09-21%20HX9_MovieLens_Report.html)
 
@@ -83,8 +78,7 @@ An investigation on the data from a [2015 PNAS research paper](https://www.pnas.
 [Read...](https://fabio-a-oliveira.github.io/2020-07-30%20Research%20Funding.html)
 
 
-
-----------------------
+<!---
 
 
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>
@@ -143,6 +137,8 @@ instrument 94
   src="test94.mid"
   sound-font = "https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus">
 </midi-player>
+
+--->
 
 empty sound-font
 <midi-player
