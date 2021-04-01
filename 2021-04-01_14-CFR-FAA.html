@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <title>Generating aviation regulations with RNNs</title>
+</head>
+
+<body>
+
+    <h1>Generating aviation regulations with RNNs</h1>
+    <p>Using a Recurrent Neural Network to generate new text in the style of the US civil aviation regulations</p>
+    
+    <h2>Introduction</h2>
+
+        <p>Recurrent Neural Networks are great! They allow us to make predictions based on sequential data by using a relatively simple neural network architecture and repeating it at each step of the sequence. At each of these steps, the network outputs a prediction (like any other architecture) as well as a memory state (that's the innovation) which is used by its next iteration in the prediction task. The result of this arrangement is that we end up with a mesh of recurrent units which share their weights and biases, while at the same time communicating with each other through the exchange of the contents of memory cells.</p>
+
+        <p>RNNs can be successfully applied to a number of prediction problems, ranging from predicting the weather based on a sequence of data points to predicting future stock prices based on historical data.</p>
+
+        <p>Because of their ability to estimate the next point on a sequence of data, RNNs can also be used to generate original data points. If we seed an RNN with a sequence and use it to predict probabilities of the next entry, we can sample those probabilities to get a plausible extension to the data. We can then feed the newly extended sequence to the RNN again and get yet another new point. By repeating this process, a carefully trained RNN can be used to generate new content based on patterns learned from a training set, be it the entirety of Shakespeare's plays, the full collection of 4-part Bach chorales, a large collection of Wikipedia articles, or any other large corpus of sequential data we train it on.</p>
+
+        <p>In this article, I'll showcase some of the results of applying a Recurrent Neural Network to the full set of US civil aviation regulations. By training a model to read a sequence of characters and predict the next one, we end up with a network that is able to generate original text in the style of these regulations, one character at a time. I chose the FAA-issued regulations because they amount to a large corpus of text (over 6 million characters), they are readily available online in an easy to parse format, and because I spent a good portion of the last decade ensuring compliance of aircraft, operations and flight crew with them.</p>
+
+    <hr>
+
+    <h2>Model description</h2>
+
+        <p>This article will not go into details on the hows and whys of RNNs. If you are interested in an explanation and on tons of amusing examples, I can't recommend Andrej Karpathy's <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Neural Networks</a> blog post enough!</p>
+
+        <p>Nevertheless, here is a high-level description of the model features:</p>
+
+            <li>The full set of regulations (over 6 million characters) was divided into a train, a validation and a test set in a 98/2/2% proportion. The partitioning was not insensitive to the text organization: each section of the regulations was saved in its entirety to a single one of the three partitions.</li>
+
+            <li>The model consists of a time-distributed encoding layer using a tokenizer with 116 tokens corresponding to every character found in the training set, followed by a stack of 3 Gated Recurrent Units with 580 units each, layer normalization and dropout regularization applied to both the memory and the output, followed by a densely connected layer with softmax activation. Here is output of the <i>model.summary()</i> method in keras: <br><br> </li>
+
+            <img src="2021-04-01_14-CFR-FAA___model_summary.png" alt="model_summary()" style="width:70%">
+
+            <blockquote><i><b>FIGURE 1.</b> Output of the model.summary() method</i></blockquote>
+        
+            <li>Optimization is done using the Adam optimizer with Nesterov momentum for 100 epochs, with learning rate reductions every time the loss function reaches a plateau. </li>
+        
+            <li>At each training step, the model is fed with 32 batches of 256-characters-long sequences. </li>
+        
+            <li>Every recurrent unit was set to stateful configuration, so the contents of the memory cells carried over from batch to batch.</li>
+        
+            <li>The problem is set up in a many-to-many approach, meaning that at each step the network is expected to predict the next character in the sequence. </li>
+        
+            <li>The full model contains a little over 5 million parameters.</li>
+
+        <p>If you want to check the code, a jupyter notebook with the python implementation can be found <a href="https://github.com/fabio-a-oliveira/14-CFR-FAA/blob/main/14_CFR_FAA.ipynb">here</a>.</p>
+
+        <p>Now, let's finally see some examples!</p>
+
+    <hr>
+
+    <h2>Results</h2>
+
+        <p>After training the model (took me around 20 hours in a Google Colab session with GPU acceleration), it reaches an accuracy of around 82% in the test set - meaning that it is able to correctly predict the following character 82% of the time in a selection of regulatory text it has not seen during training. For the text it did see during training, accuracy reaches a little over 86%.</p>
+
+        <p>I used the model to generate a sequence of 1 million new characters and saved it to a text file. This corresponds roughly to 1/6 of the total size of the FAA regulations. If you want to have a look and try to find something interesting, you can <a href="https://raw.githubusercontent.com/fabio-a-oliveira/14-CFR-FAA/main/generated_text/generated_text___1000000_chars__2021-03-27__21-15-26.txt">see the full file here.</a></p>
+
+        <p>Here are some highlights:</p>
+
+            <h3>Proper vocabulary, but no sense of semantics:</h3>
+
+                <p>The network is great at capturing the typical terminology found in the regulations, and can even form long sentences. Even though the generated text reads very familiar to someone accustomed to aviation regulations, it fails to generate statements that really make sense.</p>
+
+                <blockquote><i>§ 121.447   Personnel conducting operations with a category and class rating.(a) General. A person who applies for a model aircraft must receive and log ground and flight training in government-questioning in the maneuvers and procedures may be included in the Airworthiness Limitation section. The following information must be used:</i></blockquote>
+
+                <blockquote><i>(ii) Instructor as an instructor in which the person proficient to perfect flight experience required under paragraph (a)(1)(ii) of this section for the practical test.</i></blockquote>
+
+                <blockquote><i>For each airplane with four or more engines, the same height above the heliport may be less than the speed from 3 percent of 3 consecutive hours.</i></blockquote>
+
+            <h3>Long sentences and paragraphs with proper structure, but no discernible subject:</h3>
+
+                <p>The model reproduces the typical length of sentences, paragraphs and sections. It even captures the way the text is hierarchically structured.  But it does not retain a coherent topic, and often outputs unrelated subjects in the same sentence:</p>
+
+                <p>Here, it mixes static pressure, control surfaces, emergency exits, fire and more:</p>
+
+                <blockquote><i>§ 23.2525   Static pressure system tests.If an engine fails. Each oil balloon that is distributed to the airplane movement on the surfaces and other related procedures must be indicated by determining the payload, compliance must be shown by analysis or tests to prevent each emergency exit must be installed so that - <br>
+                (1) The individual component selected for dry ratings have its less or high system functioning. <br>
+                (3) Critical cyclic parts throughout the engine to project elements for any fire likely to occur in the open position. <br>
+                (d) Fire. (c) separate fuel tank sump due to unautomatic or power-operated systems safely and fumes can erect, to an area where deformation is expected to combat first intended for use or automatic or power-operated systems.</i></blockquote>
+
+                <p>In this excerpt,  it touches on stowage, radio equipment, missed approaches, engines, maintenance and noise:</p>
+
+                <blockquote><i>§ 33.85   Stowage provisions. Section 121.310(e), Section 121.337(b)(1)(viii), The radio equipment operating at not more than two unmissed approach is granted such that the auxiliary sign failure occurs while operating in the closed datum point.<br>
+                (7) An engine which receives protection for such noneach quantity of air carrier since the last day of the immediate satellite operating conditions expected, it has enough fuel, considering entry points, but not limited to, restrictions, any instructions necessary to accomplish the identification of the person authorized to perform more than one aircraft or set of aircraft. The Flight Standards office gives the following program:<br>
+                (1) A current copy of the documentation shown in § 121.405. <br>
+                (d) Compliance with this section, This subpart applies to each certificate holder that has been approved by the Administrator. <br>
+                (k) Maintenance and noise limits. This section applies to foreign air carriers or foreign persons holding a turbine-powered/aircraft registered in the United States in command of an aircraft shall, if that person:</i></blockquote>
+
+                <p>The actual <a href="https://www.ecfr.gov/cgi-bin/text-idx?SID=dced45d7c9be663e6f1b9a04be026278&mc=true&node=se14.1.23_12525&rgn=div8">§ 23.2525</a> addresses power generation, storage and distribution for normal category airplanes, while the actual <a href="https://www.ecfr.gov/cgi-bin/text-idx?SID=dced45d7c9be663e6f1b9a04be026278&mc=true&node=se14.1.33_185&rgn=div8">§ 33.85</a> addresses powerplant calibration tests.</p>
+
+                <p>The model also also fails to pick up on the ordering patterns: paragraphs should follow the order (a), (b), (c) etc, items should follow (i), (ii), (iii), (iv) etc, but the proper numbering is all over the place in the generated text.</p>
+
+            <h3>Misspellings</h3>
+                    
+                <p>Overall, the model is great at spelling words correctly, and can even pick up on other patterns like the use of capital letters and the placement of spaces, commas, and periods. However, misspelled or non-existent words are also common, largely due to the sampling process - in order to ensure that the newly generated text is not repetitive, the next character is randomly chosen according to its probability (instead of just picking the most likely one).</p>
+
+                <blockquote><i>a relationship between these places above $3,500 world holding a <b><u>nartoty</u></b> program aircraft that requires a Navy I</i></blockquote>
+
+                <blockquote><i>§ 91.855   Responsibility: Authority to exemption related to Fuel <b><u>volus</u></b> or ferry flight time.</i></blockquote>
+
+                <blockquote><i>§ 25.509   Special <b><u>fattiue</u></b> control.(a) Each intended operation with full airplane with a maximum takeoff weight</i></blockquote>
+
+            <h3>Regulatory meta data</h3>
+
+                <p>Once in a while, the model outputs what seems to be random gibberish, but in fact corresponds to regulatory references to docket numbers, regulatory amendments, and dates of publication. These are all properly located at the end of a section.</p>
+
+                <blockquote><i>(1) The investigation of each of the flight is conducted under an approved equivalent method, resulting from fires within the normal operating range of engine operating limitations effective at least 3 hours.<br>
+                <b><u>[Doc. No. 2000-8114, 66 FR 25036, Apr. 28, 2001]</u></b></i></blockquote>
+
+                <blockquote><i>§ 27.933   Cowling factors.(a) An instrument number of systems must ensure that the relationship exit arrives and engine under loads that would occur when the exit is opened.<br>
+                (b) At speeds which can resist that: <br>
+                (1) There is a s sumary over the kind of warning; and <br>
+                (2) For flures from one source, or the nose gear, must be designed to withstand - <br>
+                (1) The minimum value of operation of the tank; and <br>
+                (3) The structure must be designed for the loads in the level landing attitude with only the rotational angle. <br>
+                (2) The limit torque limit must be determined at a speed which would exist (at sea level and in the configuration used in design conditions, such as stall, may not exceed the corresponding static ground load conditions by the manufacturer; and <br>
+                (2) Vertically, and the control system functioning indicator for each engine. <br>
+                (b) For each required floor level emergency exit must be designed constant at a speed, complete power failure, to prevent ice classifications or failures. <br>
+                <b><u>[Doc. No. 5066, 29 FR 18291, Dec. 24, 1964, as amended by Amdt. 25-38, 41 FR 55466, Dec. 20, 1976]</u></b></i></blockquote>
+
+            <h3>A few longer examples</h3>
+
+                <p>The previous excerpts were all short pieces of text chosen to illustrate particular features. However, when looking at the entire text, it is clearly divided into sections and paragraphs about the same size as the actual regulations. Here are some examples:</p>
+
+                <blockquote><i>§ 15.50   How money of all rulemakings.(a) Agricultural aircraft operator. No later than 30 days after completion of a discovery request.
+                (d) Whenever the respondent fails to provide a coordinate the letter of by only if - <br>
+                (a) It fails to comply with § 161.205; or <br>
+                (2) Consider of the proceedings or acquired the project if it has an extension to the prohibited response plan that provides for the information. When appropriate, and any other statutory evidence, or in the record when it is not in any negligible issue or may not provide FAA approval of the proposed project in accordance with § 161.305 (b).<br>
+                (2) The DRO or Special Master, why the final notice dided for a subppoena will be disclosed. If the FAA decisionmaker grants an an invide discovery request and shall serve a copy on the complaint to the party. However, for this contract dispute examination, report to the hearing officer and<br>
+                (4) A copy of the petitioner to renew the law effectiveness of the motion. If two indemnification is required.<br>
+                [Doc. No. 18834, 54 FR 34318, Aug. 18, 1989, as amended by Amdt. 91-296, 72 FR 31679, June 7, 2007]</i></blockquote>
+
+                <blockquote><i>§ 47.80   Prohibition on behalf of an accident. A person who requests an IFR procedure or nontransport category airplane may take off that airplane at a weight greater than that listed in appendix F to this part, instead of the 30-second OEI power rating must be operated in accordance with § 25.21(g), select, or altitude. The maximum operating weight of the rotorcraft, with the rotorcraft compartment, must be with the airplane between the gas temperature at which the rotorcraft operating in flight condition, must be so marked so that it cannot achieve the compartment where it is shown that, unless appropriate weather reports or forects, temperatures, and landing gear, as a multiengine rating which is reported to be students with one engine inoperative, or at the maximum propeller time since the lowest weight allowing scheduled service life rafts (except cylinder barrels). <br>
+                (iii) Smoking. Each powerplant and auxiliary power unit must be able to support systems used. <br>
+                (C) The members who have qualified and complete each engine, in each tank, the flight deck for starting and reaction between its operation are free from flutter, controls, and fuel and oil is any combination of the test; and<br>
+                (2) Be likely to cause injury to a hazardous condition.</i></blockquote>
+
+                <p>These are only a few bits and pieces chosen from a large corpus of text generated by the model. If you are interested in trying to find amusing examples by yourself, you can check out <a href="https://raw.githubusercontent.com/fabio-a-oliveira/14-CFR-FAA/main/generated_text/generated_text___1000000_chars__2021-03-27__21-15-26.txt">this 1-million characters long text file.</a></p>
+
+    <hr>
+
+    <h2>Conclusion</h2>
+
+        <p>This has been a fun project, and I hope you found the results amusing.</p>
+
+        <p>The model generated some amusing new text very similar in terminology, style and structure to the actual corpus of US civil aviation regulations published by the FAA. But it falls short in producing something that makes sense and has any actual meaning.</p>
+
+        <p>These severe limitations are justified by the fact that it is very difficult to extract meaningful content from a model trained on individual characters. Meaning depends on larger and more complex structures like words, sentences and paragraphs, and being able to learn these by looking at one character at a time requires a much larger corpus of text and substantial computational resources.</p>
+
+        <p>It is also worth noting that the model had no prior knowledge or exposure whatsoever to any text on any language. Every bit of English it learned was based on this regulatory text.</p>
+
+        <p>An alternative to this implementation is the use of pre-trained word embeddings to represent individual words as a vector of features or "characteristics". Word embeddings are much better in capturing the semantics of the text. They also carry over a lot of language knowledge acquired during their own training period, which allows the model to focus on learning patterns that are much more specific to the task at hand.</p>
+
+        <p>However, I suspect that the pre-trained word embeddings publicly available wouldn't be quite well suited to text of such specialized nature as aviation regulations.</p>
+
+        <p>If you're interested in understanding RNNs in a little more detail or seeing a few other examples of amusing applications, I highly recommend <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">this blog post</a>. If you want to learn how to build this sort of model, <a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/">this book</a> is the way to go. In case you want to check out the dataset and have a go at it yourself, you can access it on kaggle <a href="https://www.kaggle.com/fabioaoliveira/14-cfr-faa-2021">at this link</a>. You can also check out my work generating new baroque music in the style of Bach's 4-part chorales <a href="https://fabio-a-oliveira.github.io/2021-03-10_Bach_chorales.html">in this post.</a></p>
+
+    <hr>
+
+    <h2>References and relevant links</h2>
+    
+        <li><a href="https://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&tpl=/ecfrbrowse/Title14/14tab_02.tpl">FAA Regulations</a> - The full set of regulations used to train the neural network, available through the e-CFR website</li>
+
+        <li><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Neural Networks</a> - Andrej Karpathy's classic blog post on what are RNN's and what they can do</li>
+
+        <li><a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/">Hands-on Machine Learning with Scikit-Learn, Keras & Tensorflow</a> - Great book for learning how to implement this sort of model using tensorflow</li>
+
+</body>
+
+</html>
