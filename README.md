@@ -1,3 +1,4 @@
+<!---
 # Fabio Oliveira's blog
 
 _About me: an Engineer with background in the Auto and Aerospace industries, now delving into Data Science & Machine Learning and documenting his exploits_    
@@ -5,6 +6,7 @@ _About me: an Engineer with background in the Auto and Aerospace industries, now
 _reach out: [email](mailto:fabio.afdo@gmail.com), [LinkedIn](https://www.linkedin.com/in/fabioarbacholiveira/), [GitHub](https://github.com/fabio-a-oliveira)_
 
 ***
+--->
 
 _April 1, 2021_
 ## [Generating aviation regulations with RNNs](https://fabio-a-oliveira.github.io/2021-04-01_14-CFR-FAA.html)
