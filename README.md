@@ -108,13 +108,13 @@ A naive encoding of time series data, created before I knew anything about recur
 ***
 
 _Jul 30, 2020_
-## [Gender bias in research funding](https://fabio-a-oliveira.github.io/2020-07-30%20Research%20Funding.html)
+## [Gender bias in research funding](https://fabio-a-oliveira.github.io/2020-07-30_Research_Funding.html)
 
 An investigation on the data from a [2015 PNAS research paper](https://www.pnas.org/content/112/40/12349) (used as a pretext for practicing R-Markdown and data visualization with ggplot2).   
 
 <img src="2020-07-30%2001.png" width="80%" class="center">
 
-[Read...](https://fabio-a-oliveira.github.io/2020-07-30%20Research%20Funding.html)
+[Read...](https://fabio-a-oliveira.github.io/2020-07-30_Research_Funding.html)
 
 
 <!---
