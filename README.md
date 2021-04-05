@@ -12,12 +12,7 @@ Over the last decade, I spent of lot of time ensuring that aircraft, operations 
 
 In this article, I explain how I trained a stack of Gated Recurrent Units on the full corpus of FAA regulations and discuss the results of using the model to generate new text following the same style. You can also see a teaser in the block below or visit [this link](https://raw.githubusercontent.com/fabio-a-oliveira/14-CFR-FAA/main/generated_text/generated_text___1000000_chars__2021-03-27__21-15-26.txt) for a 1-million characters sample of original regulatory text.
 
-<img src="2021-04-01_generated_47_80.png" width="100%"></img>
-
-> _§ 47.80 Prohibition on behalf of an accident. A person who requests an IFR procedure or nontransport category airplane may take off that airplane at a weight greater than that listed in appendix F to this part, instead of the 30-second OEI power rating must be operated in accordance with § 25.21(g), select, or altitude. The maximum operating weight of the rotorcraft, with the rotorcraft compartment, must be with the airplane between the gas temperature at which the rotorcraft operating in flight condition, must be so marked so that it cannot achieve the compartment where it is shown that, unless appropriate weather reports or forects, temperatures, and landing gear, as a multiengine rating which is reported to be students with one engine inoperative, or at the maximum propeller time since the lowest weight allowing scheduled service life rafts (except cylinder barrels).    
-(iii) Smoking. Each powerplant and auxiliary power unit must be able to support systems used.    
-(C) The members who have qualified and complete each engine, in each tank, the flight deck for starting and reaction between its operation are free from flutter, controls, and fuel and oil is any combination of the test; and    
-(2) Be likely to cause injury to a hazardous condition._    
+<img src="2021-04-01_generated_47_80.png" width="100%">   
 
 [Read...](https://fabio-a-oliveira.github.io/2021-04-01_14-CFR-FAA.html)    
 
