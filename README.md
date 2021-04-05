@@ -1,6 +1,7 @@
 # Fabio Oliveira's blog
 
-_About me: an Engineer with background in the Auto and Aerospace industries, now delving into Data Science & Machine Learning and documenting his exploits_   
+_About me: an Engineer with background in the Auto and Aerospace industries, now delving into Data Science & Machine Learning and documenting his exploits_    
+
 _reach out: [email](mailto:fabio.afdo@gmail.com), [LinkedIn](https://www.linkedin.com/in/fabioarbacholiveira/), [GitHub](https://github.com/fabio-a-oliveira)_
 
 ***
