@@ -97,13 +97,13 @@ Read...
 --->
 
 _Aug 4, 2020_
-## [Stock data reduction via identification of “pivot points”](https:/fabio-a-oliveira.github.io/2020-08-04_stock_data_simplification.html)
+## [Stock data reduction via identification of “pivot points”](https://fabio-a-oliveira.github.io/2020-08-04_stock_data_simplification.html)
 
 A naive encoding of time series data, created before I knew anything about recurrent neural networks. A combination of a 1D conv-net for encoding and a recurrent network for inference would have been much better suited to the task. Cool visualizations though!   
 
 <img src="2020-08-04_animation_sequential_loop.gif" width="80%" class="center">
 
-[Read...](https:/fabio-a-oliveira.github.io/2020-08-04_stock_data_simplification.html)   
+[Read...](https://fabio-a-oliveira.github.io/2020-08-04_stock_data_simplification.html)   
 
 ***
 
