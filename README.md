@@ -1,7 +1,7 @@
-# Fabio Oliveira's blog & projects & rants
+# Fabio Oliveira's blog
 
-_About me: a dude delving into Data Science & Machine Learning and documenting his exploits_   
-_contact info: [email](mailto:fabio.afdo@gmail.com), [LinkedIn](https://www.linkedin.com/in/fabioarbacholiveira/), [GitHub](https://github.com/fabio-a-oliveira)_
+_About me: an Engineer with background in the Auto and Aerospace industries, now delving into Data Science & Machine Learning and documenting his exploits_   
+_reach out: [email](mailto:fabio.afdo@gmail.com), [LinkedIn](https://www.linkedin.com/in/fabioarbacholiveira/), [GitHub](https://github.com/fabio-a-oliveira)_
 
 ***
 
