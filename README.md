@@ -8,6 +8,25 @@ _reach out: [email](mailto:fabio.afdo@gmail.com), [LinkedIn](https://www.linkedi
 ***
 --->
 
+_April 24, 2021_
+## [A simplistic app for NLP applications to aviation regulations](https://pywebio-nlp-demo.herokuapp.com/)
+
+Aviation is a heavily regulated industry. There are tons of regulations and advisory material both at the global level (stemming mostly from ICAO, the UN's arm for civil aviation) and at the local level (from each country's own civil aviation authorities). Even though there is a huge effort put into interoperability, this sea of regulations is still far from standardized.
+
+This vast variety makes the field perfect for the application of Natural Language Processing techniques.
+
+This simple app showcases two such applications. In the first, the user is prompted to choose a requirement (either from a list taken from Brazilian regulations or from a free text input field) and a model tries to find the corresponding requirement in the US regulations. In the second, the user can select a requirement (either from the US or Brazilian regulations or from a free text input field) and a model determines whether that rule applies to the aircraft or to the operator.
+
+In both applications, requirements are restricted to those applied to airlines, but the concept can easily be extended to text of any nature.
+
+You can visit the web app [at this link](https://pywebio-nlp-demo.herokuapp.com/). You can also check the app code [here](https://github.com/fabio-a-oliveira/PyWebIO_NLP_demo), or the code for the comparison technique and classification model [here](https://github.com/fabio-a-oliveira/NLP_Regulations).
+
+<a href="https://pywebio-nlp-demo.herokuapp.com/"><img src="2021-04-24_PyWebIO_NLP_demo.png" width="100%"></a>
+
+[Visit...](https://pywebio-nlp-demo.herokuapp.com/)
+
+***
+
 _April 1, 2021_
 ## [Generating aviation regulations with RNNs](https://fabio-a-oliveira.github.io/2021-04-01_14-CFR-FAA.html)
 
