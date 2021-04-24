@@ -9,7 +9,7 @@ _reach out: [email](mailto:fabio.afdo@gmail.com), [LinkedIn](https://www.linkedi
 --->
 
 _April 24, 2021_
-## [A simplistic app for NLP applications to aviation regulations](https://pywebio-nlp-demo.herokuapp.com/)
+## [A simplistic app to showcase a couple of NLP applications to aviation regulations](https://pywebio-nlp-demo.herokuapp.com/)
 
 Aviation is a heavily regulated industry. There are tons of regulations and advisory material both at the global level (stemming mostly from ICAO, the UN's arm for civil aviation) and at the local level (from each country's own civil aviation authorities). Even though there is a huge effort put into interoperability, this sea of regulations is still far from standardized.
 
