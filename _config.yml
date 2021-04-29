@@ -1,1 +1,10 @@
+title: "Fabio Oliveira's blog"
+description: "an Electrical Engineer with background in the Automotive and Aerospace industries, now delving into Data Science & Machine Learning and documenting his exploits"
 theme: jekyll-theme-slate
+nav-bar links: 
+  home: "fabio-a-oliveira.github.io"
+social-network-links:
+  email: "fabio.afdo@gmail.com"
+  github: "https://github.com/fabio-a-oliveira"
+  linkedin: "https://www.linkedin.com/in/fabioarbacholiveira/"
+url-pretty: "fabio-a-oliveira.github.io"
