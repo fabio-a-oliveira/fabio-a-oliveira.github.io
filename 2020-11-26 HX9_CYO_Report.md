@@ -4,6 +4,9 @@
 
 <head>
 
+
+<meta property="og:image" content="https://github.com/fabio-a-oliveira/fabio-a-oliveira.github.io/blob/main/2020-11-26_thumbnail_moa_prediction.png?raw=true">
+
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />

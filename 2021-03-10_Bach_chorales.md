@@ -2,6 +2,8 @@
 
 <head>
 
+<meta property="og:image" content="https://github.com/fabio-a-oliveira/fabio-a-oliveira.github.io/blob/main/2021-03-10_Bach_chorales.png?raw=true">
+
 <title>Generating new music in the style of Bach's chorales</title>
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>
 

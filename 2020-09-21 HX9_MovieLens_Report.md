@@ -4,6 +4,8 @@
 
 <head>
 
+<meta property="og:image" content="https://github.com/fabio-a-oliveira/fabio-a-oliveira.github.io/blob/main/2020-09-21_thumbnail_MovieLens.png?raw=true">
+
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
