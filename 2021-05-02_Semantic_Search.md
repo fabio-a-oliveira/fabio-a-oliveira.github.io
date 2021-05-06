@@ -53,29 +53,29 @@
 
         <p>First, let’s try looking for the exact same sentence to make sure the code is working:</p>
 
-        <img src="assets/2021-05-02_austen01.jpg" alt="Searching for exact match">
+        <img src="assets/2021-05-02_austen01.jpg" alt="Searching for exact match" width="100%">
 
         <p>Well, it is no surprise that the search works. After all, we were searching for the exact same sentence. Let’s make it a little more difficult and change some of the words for synonims:</p>
 
-        <img src="assets/2021-05-02_austen02.jpg" alt="Searching for modified sentence">
+        <img src="assets/2021-05-02_austen02.jpg" alt="Searching for modified sentence" width="100%">
 
         <p>Great! We do have a match with the corresponding original sentence. However, we can see that there is a slight misalignment in the result: the first 4 words are missing, and 3 additional words (or 4 tokens, considering the dot) are added to the end. This is a frequent artifact of the response. Since we are working with sliding windows, there is a large overlap between sentences, and results will be often ofset by a few words to the right or left.</p>
 
         <p>Now, let’s go beyond synonims and alter the sentence more substantially, including some simplifications. Since our input will be somewhat shorter than our expected output, we’ll search with a margin of 10 (the sliding window will be 10 words longer then the provided input). In practice, an user may have to experiment with this parameter when using a search engine powered by this method.</p>
 
-        <img src="assets/2021-05-02_austen03.jpg" alt="Searching for simplified sentence">
+        <img src="assets/2021-05-02_austen03.jpg" alt="Searching for simplified sentence" width="100%">
 
         <p>We have a match again!</p>
 
         <p>Now, let’s try an extreme example and provide just the gist of the sentence as an excerpt for the algorithm. We’ll use a margin of 10 words again.</p>
 
-        <img src="assets/2021-05-02_austen04.jpg" alt="Searching for minimal sentence">
+        <img src="assets/2021-05-02_austen04.jpg" alt="Searching for minimal sentence" width="100%">
 
         <p>That did not go very well. The algorithm found a match that does not correspond to the original sentence we wanted in the book.</p>
 
         <p>However, we can cycle through some of the top results and see if the actual sentence pops up:</p>
 
-        <img src="assets/2021-05-02_austen05.jpg" alt="Browsing through multiple results">
+        <img src="assets/2021-05-02_austen05.jpg" alt="Browsing through multiple results" width="100%">
 
         <p>Looking carefully at the top 10 results, we see that the original excerpt we were looking for corresponds to entries 5 and 6. There is a lot of overlap between results, so there are actually just 4 different parts in this selection, of which our desired outcome is the third.</p>
 
@@ -93,23 +93,23 @@
 
         <p>We begin with a few single sentences, starting with the first sentence in the book and then trying a few more:</p>
 
-        <img src="assets/2021-05-02_austen06.jpg" alt="Single sentence">
+        <img src="assets/2021-05-02_austen06.jpg" alt="Single sentence" width="100%">
 
         <p>Now, a sligthly longer one:</p>
 
-        <img src="assets/2021-05-02_austen07.jpg" alt="Longer sentence">
+        <img src="assets/2021-05-02_austen07.jpg" alt="Longer sentence" width="100%">
 
         <p>It is clear that the text translated back to English carries the same meaning, but the wording is remarkably different:</p>
 
-        <img src="assets/2021-05-02_austen08.jpg" alt="Multiple sentences">
+        <img src="assets/2021-05-02_austen08.jpg" alt="Multiple sentences" width="100%">
 
         <p>Shorter passages are more difficult to find precisely, but we still manage to correctly identify them:</p>
 
-        <img src="assets/2021-05-02_austen09.jpg" alt="Short dialogue">
+        <img src="assets/2021-05-02_austen09.jpg" alt="Short dialogue" width="100%">
 
         <p>The method is more robust when we provide longer sentences as input, as finding another partial match is a lot more rare:</p>
 
-        <img src="assets/2021-05-02_austen10.jpg" alt="Full paragraph">
+        <img src="assets/2021-05-02_austen10.jpg" alt="Full paragraph" width="100%">
 
         <p>In all of these examples, the method was able to identify the correct excerpt from the original text (give or take a few words to the right or left), even though the translations were very different from the original.</p>
 
@@ -125,7 +125,7 @@
 
         <p>With some minor modifications — like merging overlapping results and improving the ability to correctly identify the beginning and end of a corresponding passage in the results — the technique could easily be applied to search for content in large documents, which is currently an ineffective and time-consuming task.</p>
 
-        <p>If you’re wondering about the choice to represent sentences by combining word embeddings and a bag-of-words approach instead of going straight for sentence embeddings with transformers, know that my original intention was precisely that. However, as I set up the method with word embeddings to get a baseline result, I was so blown away by the robustness of the results that I just decided to keep it simple and present the them like this.</p>
+        <p>If you’re wondering about the choice to represent sentences by combining word embeddings and a bag-of-words approach instead of going straight for sentence embeddings with transformers, know that my original intention was precisely that. However, as I set up the method with word embeddings to get a baseline result, I was so blown away by the robustness of the results that I just decided to keep it simple and present them like this.</p>
 
         <hr>
 
