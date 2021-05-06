@@ -10,11 +10,11 @@ _reach out: [email](mailto:fabio.afdo@gmail.com), [LinkedIn](https://www.linkedi
 
 _May 3, 2021_
 
-## [Beyond CTRL+F - using word embeddings to implement a semantic search](https://fabio-a-oliveira.github.io/2021-05-02_Semantic_Search.html)
+## [Beyond CTRL+F: using word embeddings to implement a semantic search](https://fabio-a-oliveira.github.io/2021-05-02_Semantic_Search.html)
 
-Trying to find a passage within a long document can be very annoying when we don't recall it exactly. We have to either search for a single word and browse through what can be dozens of matches, or we can try to narrow our search down by trial and error with different combinations of words.
+Trying to find a passage within a long document can be very annoying when we don't recall it exactly. We have to either search for a single word and browse through what can be dozens of matches, or we can try to narrow our search down by trial-and-error with different combinations of words.
 
-With word embeddings, we can do much better! We can use them to create a dense vector that encodes the ___meaning___ of our desired search, and then search the document for a passage that matches our desired meaning.
+With word embeddings, we can do much better! We can use them to create a dense vector that encodes the ___meaning___ of a desired passage, and then search the document for an excerpt that matches our desired meaning.
 
 In [this article](https://fabio-a-oliveira.github.io/2021-05-02_Semantic_Search.html), I illustrate the concept by searching the classic _Pride and Prejudice_ for passages that correspond to either simplified or translated parts of the book.
 
