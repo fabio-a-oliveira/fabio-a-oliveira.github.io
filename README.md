@@ -8,6 +8,22 @@ _reach out: [email](mailto:fabio.afdo@gmail.com), [LinkedIn](https://www.linkedi
 ***
 --->
 
+_May 3, 2021_
+
+## [Beyond CTRL+F - using word embeddings to implement a semantic search](https://fabio-a-oliveira.github.io/2021-05-02_Semantic_Search.html)
+
+Trying to find a passage within a long document can be very annoying when we don't recall it exactly. We have to either search for a single word and browse through what can be dozens of matches, or we can try to narrow our search down by trial and error with different combinations of words.
+
+With word embeddings, we can do much better! We can use them to create a dense vector that encodes the ___meaning___ of our desired search, and then search the document for a passage that matches our desired meaning.
+
+In [this article](https://fabio-a-oliveira.github.io/2021-05-02_Semantic_Search.html), I illustrate the concept by searching the classic _Pride and Prejudice_ for passages that correspond to either simplified or translated parts of the book.
+
+<a href="https://fabio-a-oliveira.github.io/2021-05-02_Semantic_Search.html"><img src="assets/2021-05-02_austen03.jpg" width="100%"></a>
+
+[Read...](https://fabio-a-oliveira.github.io/2021-05-02_Semantic_Search.html)   
+
+***
+
 _April 24, 2021_
 ## [A simplistic app to showcase a couple of NLP applications to aviation regulations](https://pywebio-nlp-demo.herokuapp.com/)
 
